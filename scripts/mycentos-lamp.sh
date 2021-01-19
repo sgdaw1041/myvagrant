@@ -23,7 +23,7 @@ sudo service httpd start
 # PHP
 sudo yum install -y php php-cli php-common php-devel 
 
-# MySQL (in another dimension will install with yum)
+# MySQL (in another dimension will install db-server with yum)
 # yum install -y mysql mysql-server mysql-devel
 # chkconfig --add mysqld
 # chkconfig mysqld on
@@ -33,9 +33,9 @@ sudo yum install -y php php-cli php-common php-devel
 # mysql -u root -e "SHOW DATABASES";
 
 # Download Starter Content (as vagrant user, in quiet mode)
-# cd /vagrant
-# sudo -u vagrant wget -q https://raw.githubusercontent.com/screencasts-pro/vagrant/master/files/index.html
-# sudo -u vagrant wget -q https://raw.githubusercontent.com/screencasts-pro/vagrant/master/files/info.php
+ cd /vagrant
+ sudo -u vagrant wget -q https://raw.githubusercontent.com/sgdaw1041/myvagrant/main/files/index.html
+ sudo -u vagrant wget -q https://raw.githubusercontent.com/sgdaw1041/myvagrant/main/files/info.php
 
 sudo service httpd restart
 
