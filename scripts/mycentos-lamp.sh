@@ -4,7 +4,7 @@
 sudo yum update -y --exclude=kernel
 
 # Tools
-sudo yum install -y  git 
+sudo yum install -y  git  tree
 
 # Apache
 sudo yum install httpd httpd-tools -y 
